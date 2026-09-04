@@ -1,0 +1,13 @@
+id = "hc2"
+name = "HC2"
+version = "0.1.0"
+schema_version = 1
+authors = ["v420v"]
+description = "HC2 language support: syntax highlighting"
+languages = ["languages/hc2"]
+
+# Zed fetches `rev` from `repository` and compiles src/parser.c to wasm itself.
+# After pushing a grammar change to tree-sitter-hc2, set `rev` to that commit.
+[grammars.hc2]
+repository = "https://github.com/hc2lang/tree-sitter-hc2"
+rev = "601ab0e1ce9a0ab64d4b98c8e437013ee1436a5e"
